@@ -111,6 +111,9 @@ Here's how `DenseVectorField` can be configured with the advanced hyperparameter
 <fieldType name="knn_vector" class="solr.DenseVectorField" vectorDimension="4" similarityFunction="cosine" knnAlgorithm="hnsw" hnswMaxConnections="10" hnswBeamWidth="40"/>
 <field name="vector" type="knn_vector" indexed="true" stored="true"/>
 
+[NOTE]
+The possible values of similarity function are between [0,1].
+
 `knnAlgorithm`::
 +
 [%autowidth,frame=none]
